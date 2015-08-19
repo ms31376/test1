@@ -60,7 +60,7 @@ $server = new SoapServer("ExampleClassWS.wsdl");
    
 //set the class for the soap server  
 $server->setClass("exampleClass");   
-   
+   //test mikonim
 //handles soap operations  
 $server->handle();  
 ?>
