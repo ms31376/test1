@@ -8,7 +8,6 @@
   //disable wsdl cache  
   ini_set("soap.wsdl_cache_enabled", "0");   
      
-     
    $ws = 'ExampleClassWS.wsdl';  //wsdl file  
      
   //define the soap server location  
@@ -20,8 +19,7 @@
     $client = new SoapClient($ws, array(  
     "location" => $vLocation,  
     "trace"=>1, "exceptions"=>1  //optional parameters for debugging  
-    ));  
-var_dump($client);  
+    ));   
      
   //call the method, boom() from the soap server class  
     $output = $client->boom(array('first'=>'PHP SOAP','last'=>'Tutorial'));  
