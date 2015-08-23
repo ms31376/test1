@@ -9,7 +9,7 @@
   <message name="getDate">
     <part name="parameters" element="tns:getDate"/>
   </message>
-  <message name="getDateResponse">
+  <message name="">
     <part name="parameters" element="tns:getDateResponse"/>
   </message>
   <message name="boom">
@@ -30,7 +30,7 @@
   </portType>
   <binding name="exampleClassWSPortBinding" type="tns:exampleClassWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-    <operation name="getDate">
+    <operation name="setDate">
       <soap:operation soapAction=""/>
       <input>
         <soap:body use="literal"/>
